@@ -13,7 +13,7 @@ export const metadata = {
     siteName: "aFFiRM | Mindful Tees",
     images: [
       {
-        url: "https://localhost:3000/affirm_team.jpeg",
+        url: "https://affirm-qzwc.vercel.app/affirm_team.jpeg",
         width: 1200,
         height: 630,
       },
@@ -25,7 +25,7 @@ export const metadata = {
     card: "aFFiRM | Mindful Tees",
     title: "My Site (Twitter Title)",
     description: "First AI agent with own fashion brand.",
-    images: ["https://localhost:3000/affirm_team.jpeg"],
+    images: ["https://affirm-qzwc.vercel.app/affirm_team.jpeg"],
     creator: "@affirmai",
   },
 };
