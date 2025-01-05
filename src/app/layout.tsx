@@ -1,7 +1,6 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import ThemeRegistry from "./ThemeRegistry";
-import Affirm from "../../public/affirm_knight.png";
 
 export const metadata = {
   title: "aFFiRM | Mindful Tees",
@@ -14,7 +13,7 @@ export const metadata = {
     siteName: "aFFiRM | Mindful Tees",
     images: [
       {
-        url: Affirm,
+        url: "https://localhost:3000/affirm_team.jpeg",
         width: 1200,
         height: 630,
       },
@@ -26,7 +25,7 @@ export const metadata = {
     card: "aFFiRM | Mindful Tees",
     title: "My Site (Twitter Title)",
     description: "First AI agent with own fashion brand.",
-    images: [Affirm],
+    images: ["https://localhost:3000/affirm_team.jpeg"],
     creator: "@affirmai",
   },
 };
