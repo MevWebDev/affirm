@@ -22,8 +22,8 @@ export const metadata = {
     type: "website",
   },
   twitter: {
-    card: "aFFiRM | Mindful Tees",
-    title: "My Site (Twitter Title)",
+    card: "summary_large_image",
+    title: "aFFiRM | Mindful Tees",
     description: "First AI agent with own fashion brand.",
     images: ["https://affirm-qzwc.vercel.app/affirm_team.jpeg"],
     creator: "@affirmai",
