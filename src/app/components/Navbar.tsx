@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Affirm from "../../../public/affirm.png";
 import Image from "next/image";
 import Link from "next/link";

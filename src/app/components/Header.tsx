@@ -58,10 +58,9 @@ function Header() {
             <XIcon
               sx={{
                 fontSize: 24,
-                ":hover": { cursor: "pointer" },
+                ":hover": { cursor: "pointer", scale: 1.1 },
                 color: "#262626",
                 mt: "20%",
-                ":hover": { scale: 1.1 },
               }}
             ></XIcon>
           </Link>
@@ -69,10 +68,9 @@ function Header() {
             <TelegramIcon
               sx={{
                 fontSize: 32,
-                ":hover": { cursor: "pointer" },
+                ":hover": { cursor: "pointer", scale: 1.1 },
                 color: "#262626",
                 mt: "20%",
-                ":hover": { scale: 1.1 },
               }}
             />
           </Link>
@@ -83,10 +81,9 @@ function Header() {
             <InstagramIcon
               sx={{
                 fontSize: 32,
-                ":hover": { cursor: "pointer" },
+                ":hover": { cursor: "pointer", scale: 1.1 },
                 color: "#262626",
                 mt: "20%",
-                ":hover": { scale: 1.1 },
               }}
             />
           </Link>
