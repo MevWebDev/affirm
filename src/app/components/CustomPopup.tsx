@@ -10,6 +10,7 @@ import {
 import { PopupType } from "./Navbar";
 import CloseIcon from "@mui/icons-material/Close";
 import LinksPopup from "./LinksPopup";
+import Why from "./Why";
 
 interface PopupProps {
   popupType: PopupType;
@@ -34,8 +35,8 @@ export default function Popup({ popupType, onClose }: PopupProps) {
       content = <Box>Content for Popup 3</Box>;
       break;
     case PopupType.WHY:
-      title = "Popup 4";
-      content = <Box>Content for Popup 4</Box>;
+      title = "Manifest";
+      content = <Why />;
       break;
     default:
       title = "Unknown Popup";
@@ -43,7 +44,7 @@ export default function Popup({ popupType, onClose }: PopupProps) {
   }
 
   return (
-    <Dialog open onClose={onClose}>
+    <Dialog open maxWidth="md" onClose={onClose}>
       <IconButton
         onClick={onClose}
         sx={{
