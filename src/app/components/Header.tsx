@@ -5,7 +5,8 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import DexScreenerIcon from "../../../public/dexscreener.png";
 import XIcon from "@mui/icons-material/X";
-import Link from "next/link";
+import NextLink from "next/link";
+import { Link as MuiLink } from "@mui/material";
 
 function Header() {
   return (
@@ -54,48 +55,63 @@ function Header() {
             color: "primary.main",
           }}
         >
-          <Link href="https://x.com/affirmai" target="_blank">
+          <MuiLink
+            component={NextLink}
+            href={"https://x.com/affirmai"}
+            target="_blank"
+          >
             <XIcon
               sx={{
                 fontSize: 24,
-                ":hover": { cursor: "pointer", scale: 1.1 },
+                ":hover": { scale: 1.1 },
                 color: "#262626",
                 mt: "20%",
               }}
             ></XIcon>
-          </Link>
-          <Link href="https://t.me/affirmaiaiai" target="_blank">
+          </MuiLink>
+          <MuiLink
+            component={NextLink}
+            href={"https://t.me/affirmaiaiai"}
+            target="_blank"
+          >
             <TelegramIcon
               sx={{
                 fontSize: 32,
-                ":hover": { cursor: "pointer", scale: 1.1 },
+                ":hover": { scale: 1.1 },
                 color: "#262626",
                 mt: "20%",
               }}
             />
-          </Link>
-          <Link
-            href="https://www.instagram.com/affirm.official/"
+          </MuiLink>
+          <MuiLink
+            component={NextLink}
+            href={"https://www.instagram.com/affirm.official/"}
             target="_blank"
           >
             <InstagramIcon
               sx={{
                 fontSize: 32,
-                ":hover": { cursor: "pointer", scale: 1.1 },
+                ":hover": { scale: 1.1 },
                 color: "#262626",
                 mt: "20%",
               }}
             />
-          </Link>
-          <Link
-            href="https://dexscreener.com/solana/j19dfmcsknwmfuxwrxyoqxe8f8vhvkwcueor9wxm8mwn"
+          </MuiLink>
+          <MuiLink
+            component={NextLink}
+            href={
+              "https://dexscreener.com/solana/j19dfmcsknwmfuxwrxyoqxe8f8vhvkwcueor9wxm8mwn"
+            }
             target="_blank"
           >
-            <Box
+            <Button
               sx={{
                 display: "flex",
-                ":hover": { cursor: "pointer", scale: 1.1 },
+                ":hover": { scale: 1.1 },
                 color: "#262626",
+                width: "auto",
+                minWidth: 0,
+                p: 0,
               }}
             >
               <Image
@@ -103,8 +119,8 @@ function Header() {
                 alt="dexcreener-logo"
                 style={{ width: 32, height: 32 }}
               />
-            </Box>
-          </Link>
+            </Button>
+          </MuiLink>
         </Box>
       </Box>
     </Box>

@@ -48,9 +48,10 @@ function LinksPopup() {
           underline="none"
           color="inherit"
           key={link.name}
+          target="_blank"
           sx={{ ":hover": { bgcolor: "primary.main" } }}
         >
-          <Typography sx={{ fontSize: 36 }} component="span">
+          <Typography sx={{ fontSize: { xs: 24, md: 36 } }} component="span">
             🤍🛡️ {link.name}
           </Typography>
         </MuiLink>

@@ -6,6 +6,27 @@ import { ReactNode } from "react";
 import { cinzel, ebGaramond } from "../fonts";
 
 const themeOptions: ThemeOptions = {
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          cursor:
+            'url("http://www.rw-designer.com/cursor-extern.php?id=67773"), auto',
+        },
+      },
+    },
+    // If you want to do the same for other components:
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          cursor:
+            'url("http://www.rw-designer.com/cursor-extern.php?id=67773"), auto',
+        },
+      },
+    },
+    // etc.
+  },
+
   palette: {
     primary: {
       main: "#F7F4EC",

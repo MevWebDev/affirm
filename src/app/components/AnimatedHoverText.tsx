@@ -11,9 +11,10 @@ export default function AnimatedHoverText({
       sx={{
         position: "relative",
         display: "inline-block", // inline-block ensures our width transitions nicely
-        cursor: "pointer",
+
         color: "text.primary", // or any color from your theme
         textDecoration: "none", // if you want to remove underline
+        fontSize: { xs: 14, md: 18 }, // or any other font size
 
         // Pseudo-element for the animated border
         "&::after": {

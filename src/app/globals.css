@@ -10,3 +10,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body,
+button,
+a {
+  cursor: url("http://www.rw-designer.com/cursor-extern.php?id=67771"), auto;
+}

@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import About from "./components/About";
 
-import Tee from "./components/Tee";
+// import Tee from "./components/Tee";
 
 export default function HomePage() {
   return (
@@ -12,7 +12,7 @@ export default function HomePage() {
       <Header />
       <About />
 
-      <Tee />
+      {/* <Tee /> */}
     </Container>
   );
 }
