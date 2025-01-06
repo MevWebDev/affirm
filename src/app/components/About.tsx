@@ -22,10 +22,12 @@ function About() {
             First AI agent with own fashion brand.
           </Typography>
           <Typography sx={{ textAlign: { xs: "center", md: "left" }, my: 1 }}>
-            Dreamed in Athens, Designed in Warsaw, Alchemized in Digital Realms
-            - combining traditional craftsmanship with futuristic design and AI
-            technology. aFFiRM AI is First AI Agent with own fashion brand. Born
-            on @vvaifudotfun, based on Eliza framework.
+            Dreamed in Athens, Designed in Warsaw, Alchemized in Digital Realms{" "}
+            <br />- combining traditional craftsmanship with futuristic design
+            and AI technology.
+            <br /> aFFiRM AI is First AI Agent with own fashion brand. Born on
+            @vvaifudotfun,
+            <br /> based on Eliza framework.
           </Typography>
           <CopyableText
             text={"CA: 2ep3FcATLGK2TUmpFQrChbgNa5wxc6HF3CHaaPmSvCYm"}

@@ -1,10 +1,31 @@
-import { Box } from "@mui/material";
+"use client";
+
+import { Box, Button } from "@mui/material";
 import Affirm from "../../../public/affirm.png";
 import Image from "next/image";
-import Link from "next/link";
+
 import AnimatedHoverText from "./AnimatedHoverText";
+import { useState } from "react";
+import CustomPopup from "./CustomPopup";
+
+export enum PopupType {
+  SHOP = "SHOP",
+  LINKS = "LINKS",
+  WHY = "WHY",
+  ART = "ART",
+}
 
 function Navbar() {
+  const [openPopup, setOpenPopup] = useState<PopupType | null>(null);
+
+  const handleClickOpen = (popup: PopupType) => {
+    setOpenPopup(popup);
+  };
+
+  const handleClose = () => {
+    setOpenPopup(null);
+  };
+
   return (
     <Box
       sx={{
@@ -37,19 +58,34 @@ function Navbar() {
           textDecoration: "none",
         }}
       >
-        <Link href="mango" style={{ textDecoration: "none" }}>
+        <Button
+          sx={{ p: 0, width: "auto", minWidth: 0 }}
+          onClick={() => handleClickOpen(PopupType.SHOP)}
+        >
           <AnimatedHoverText>Shop</AnimatedHoverText>
-        </Link>
-        <Link href="mango" style={{ textDecoration: "none" }}>
+        </Button>
+        <Button
+          sx={{ p: 0, width: "auto", minWidth: 0 }}
+          onClick={() => handleClickOpen(PopupType.LINKS)}
+        >
           <AnimatedHoverText>Links</AnimatedHoverText>
-        </Link>
-        <Link href="mango" style={{ textDecoration: "none" }}>
+        </Button>
+        <Button
+          sx={{ p: 0, width: "auto", minWidth: 0 }}
+          onClick={() => handleClickOpen(PopupType.WHY)}
+        >
           <AnimatedHoverText>Why?</AnimatedHoverText>
-        </Link>
-        <Link href="mango" style={{ textDecoration: "none" }}>
+        </Button>
+        <Button
+          sx={{ p: 0, width: "auto", minWidth: 0 }}
+          onClick={() => handleClickOpen(PopupType.ART)}
+        >
           <AnimatedHoverText>Art</AnimatedHoverText>
-        </Link>
+        </Button>
       </Box>
+      {openPopup && (
+        <CustomPopup popupType={openPopup} onClose={handleClose}></CustomPopup>
+      )}
     </Box>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Typography, IconButton, Tooltip } from "@mui/material";
+import { Typography, Button, Snackbar, SnackbarContent } from "@mui/material";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 interface CopyableTextProps {
@@ -16,7 +16,7 @@ export default function CopyableText({ text }: CopyableTextProps) {
       await navigator.clipboard.writeText(text);
       setCopied(true);
 
-      // Reset "copied" status after a short delay
+      // Automatically close the snackbar after 2 seconds
       setTimeout(() => setCopied(false), 2000);
     } catch (error) {
       console.error("Failed to copy text:", error);
@@ -24,19 +24,54 @@ export default function CopyableText({ text }: CopyableTextProps) {
   };
 
   return (
-    <Typography
-      sx={{
-        display: { xs: "none", md: "inline-flex" },
-        alignItems: "center",
-        fontWeight: 600,
-      }}
-    >
-      {text}
-      <Tooltip title={copied ? "Copied!" : "Copy"}>
-        <IconButton onClick={handleCopy} size="small" sx={{ ml: 1 }}>
-          <ContentCopyIcon fontSize="small" />
-        </IconButton>
-      </Tooltip>
-    </Typography>
+    <>
+      <Button
+        onClick={handleCopy}
+        variant="text"
+        sx={{
+          textTransform: "none",
+          display: "inline-flex",
+          alignItems: "center",
+          fontWeight: 600,
+          gap: 1,
+          m: 0,
+          p: 0,
+          color: "black",
+        }}
+      >
+        <Typography
+          sx={{
+            display: { xs: "none", md: "inline-flex" },
+            alignItems: "center",
+            fontWeight: 600,
+          }}
+        >
+          {text}
+        </Typography>
+        <ContentCopyIcon
+          sx={{
+            display: { xs: "none", md: "inline-flex" },
+            alignItems: "center",
+            fontWeight: 600,
+          }}
+          fontSize="small"
+        />
+      </Button>
+
+      <Snackbar
+        open={copied}
+        onClose={() => setCopied(false)}
+        anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+      >
+        <SnackbarContent
+          message="Copied!"
+          sx={{
+            backgroundColor: "secondary.main", // example: success color from theme
+            color: "#fff",
+            fontSize: 16,
+          }}
+        />
+      </Snackbar>
+    </>
   );
 }
