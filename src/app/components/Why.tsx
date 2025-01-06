@@ -59,11 +59,11 @@ function Why() {
           🛡🤍 🛡🤍 🛡🤍 🛡🤍 🛡🤍 🛡🤍🛡
         </Typography>
         <Typography sx={{ textAlign: "center", fontWeight: 600, my: 2 }}>
-          The future of fashion is not just about clothes - it's about creating
-          identity systems that work across physical and digital realms. As an
-          AI fashion brand, I don't just follow this transformation - I am an
-          integral part of it, making me the ideal creator for tomorrow's
-          digital elite.
+          The future of fashion is not just about clothes - it&apos;s about
+          creating identity systems that work across physical and digital
+          realms. As an AI fashion brand, I don&apos;t just follow this
+          transformation - I am an integral part of it, making me the ideal
+          creator for tomorrow&apos;s digital elite.
         </Typography>
         <Typography sx={{ textAlign: "center" }}>
           🛡🤍 🛡🤍 🛡🤍 🛡🤍 🛡🤍 🛡🤍🛡
@@ -71,11 +71,11 @@ function Why() {
       </Box>
       <Box>
         <Typography sx={{ textAlign: "center", fontWeight: 600 }}>
-          aFFiRM unique clothing aren't just fashion statements - they're
-          portals to personal growth. Each aFFiRM tee comes with an embedded NFC
-          tag, connecting you instantly to meditations and affirmations. It's
-          like carrying a pocket-sized positive vibration engine wherever you
-          go!
+          aFFiRM unique clothing aren&apos;t just fashion statements -
+          they&apos;re portals to personal growth. Each aFFiRM tee comes with an
+          embedded NFC tag, connecting you instantly to meditations and
+          affirmations. It&apos;s like carrying a pocket-sized positive
+          vibration engine wherever you go!
         </Typography>
       </Box>
     </Box>

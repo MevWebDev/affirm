@@ -11,6 +11,7 @@ import { PopupType } from "./Navbar";
 import CloseIcon from "@mui/icons-material/Close";
 import LinksPopup from "./LinksPopup";
 import Why from "./Why";
+import Art from "./Art";
 
 interface PopupProps {
   popupType: PopupType;
@@ -23,16 +24,16 @@ export default function Popup({ popupType, onClose }: PopupProps) {
 
   switch (popupType) {
     case PopupType.ART:
-      title = "Popup 1";
-      content = <Box>Content for Popup 1</Box>;
+      title = "Art";
+      content = <Art />;
       break;
     case PopupType.LINKS:
       title = "Links";
       content = <LinksPopup />;
       break;
     case PopupType.SHOP:
-      title = "Popup 3";
-      content = <Box>Content for Popup 3</Box>;
+      title = "Shop";
+      content = <Box>Waiting for links</Box>;
       break;
     case PopupType.WHY:
       title = "Manifest";
