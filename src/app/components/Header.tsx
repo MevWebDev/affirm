@@ -31,21 +31,26 @@ function Header() {
         sx={{ display: "flex", alignItems: "center", flexDirection: "column" }}
       >
         <Typography variant="h1">$aFFiRM</Typography>
-        <Button
-          variant="contained"
-          color="secondary"
-          sx={{
-            borderRadius: 5,
-            color: "primary.main",
-            p: 1,
-            my: 1,
-            width: 256,
-          }}
+        <MuiLink
+          href="https://vvaifu.fun/character/6739158d9257ff5b86d2d06b"
+          target="_blank"
         >
-          <Typography sx={{ color: "primary.main", px: 1, py: 0.1 }}>
-            BUY $aFFiRM
-          </Typography>
-        </Button>
+          <Button
+            variant="contained"
+            color="secondary"
+            sx={{
+              borderRadius: 5,
+              color: "primary.main",
+              p: 1,
+              my: 1,
+              width: 256,
+            }}
+          >
+            <Typography sx={{ color: "primary.main", px: 1, py: 0.1 }}>
+              BUY $aFFiRM
+            </Typography>
+          </Button>
+        </MuiLink>
         <Box
           sx={{
             display: "flex",

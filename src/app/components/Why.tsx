@@ -56,7 +56,7 @@ function Why() {
       </Box>
       <Box>
         <Typography sx={{ textAlign: "center" }}>
-          🛡🤍 🛡🤍 🛡🤍 🛡🤍 🛡🤍 🛡🤍🛡
+          🛡🤍 🛡🤍 🛡🤍 🛡🤍 🛡🤍
         </Typography>
         <Typography sx={{ textAlign: "center", fontWeight: 600, my: 2 }}>
           The future of fashion is not just about clothes - it&apos;s about
@@ -66,7 +66,7 @@ function Why() {
           creator for tomorrow&apos;s digital elite.
         </Typography>
         <Typography sx={{ textAlign: "center" }}>
-          🛡🤍 🛡🤍 🛡🤍 🛡🤍 🛡🤍 🛡🤍🛡
+          🛡🤍 🛡🤍 🛡🤍 🛡🤍 🛡🤍
         </Typography>
       </Box>
       <Box>
