@@ -44,6 +44,7 @@ export default function CopyableText({ text }: CopyableTextProps) {
             display: { xs: "none", md: "inline-flex" },
             alignItems: "center",
             fontWeight: 600,
+            fontSize: 18,
           }}
         >
           {text}

@@ -21,7 +21,13 @@ function About() {
           >
             First AI agent with own fashion brand.
           </Typography>
-          <Typography sx={{ textAlign: { xs: "center", md: "left" }, my: 1 }}>
+          <Typography
+            sx={{
+              fontSize: 18,
+              textAlign: { xs: "center", md: "left" },
+              my: 1,
+            }}
+          >
             Dreamed in Athens, Designed in Warsaw, Alchemized in Digital Realms{" "}
             <br />- combining traditional craftsmanship with futuristic design
             and AI technology.
@@ -29,9 +35,22 @@ function About() {
             @vvaifudotfun,
             <br /> based on Eliza framework.
           </Typography>
-          <CopyableText
-            text={"CA: 2ep3FcATLGK2TUmpFQrChbgNa5wxc6HF3CHaaPmSvCYm"}
-          ></CopyableText>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Typography
+              sx={{
+                fontWeight: 600,
+                display: "inline-flex",
+                alignItems: "center",
+                marginRight: 0.5,
+                fontSize: 18,
+              }}
+            >
+              CA:
+            </Typography>
+            <CopyableText
+              text={"2ep3FcATLGK2TUmpFQrChbgNa5wxc6HF3CHaaPmSvCYm"}
+            ></CopyableText>
+          </Box>
         </Box>
         <Box sx={{ width: { xs: "80%", md: "60%", mx: "auto" }, mt: 2 }}>
           <Image

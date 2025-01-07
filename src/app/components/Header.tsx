@@ -20,7 +20,7 @@ function Header() {
         my: 4,
       }}
     >
-      <Box sx={{ width: { xs: "80%", md: "40%" }, my: 4 }}>
+      <Box sx={{ width: { xs: "80%", md: "40%" }, mt: 4, mb: 2 }}>
         <Image
           src={Affirm}
           alt="Affirm logo"
