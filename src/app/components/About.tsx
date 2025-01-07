@@ -39,10 +39,11 @@ function About() {
             <Typography
               sx={{
                 fontWeight: 600,
-                display: "inline-flex",
+
                 alignItems: "center",
                 marginRight: 0.5,
                 fontSize: 18,
+                display: { xs: "none", md: "inline-flex" },
               }}
             >
               CA:
