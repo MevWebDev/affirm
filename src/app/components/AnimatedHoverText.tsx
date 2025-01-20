@@ -10,25 +10,23 @@ export default function AnimatedHoverText({
     <Typography
       sx={{
         position: "relative",
-        display: "inline-block", // inline-block ensures our width transitions nicely
+        display: "inline-block",
 
-        color: "text.primary", // or any color from your theme
-        textDecoration: "none", // if you want to remove underline
-        fontSize: { xs: 14, md: 18 }, // or any other font size
+        color: "text.primary",
+        textDecoration: "none",
+        fontSize: { xs: 14, md: 18 },
 
-        // Pseudo-element for the animated border
         "&::after": {
           content: '""',
           position: "absolute",
           bottom: 0,
           left: 0,
           width: 0,
-          height: "2px", // thickness of the border
-          backgroundColor: "currentColor", // matches the text color, or use a theme color
-          transition: "width 0.3s ease", // controls animation speed & easing
+          height: "2px",
+          backgroundColor: "currentColor",
+          transition: "width 0.3s ease",
         },
 
-        // Expand the border on hover
         "&:hover::after": {
           width: "100%",
         },

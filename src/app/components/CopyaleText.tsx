@@ -16,7 +16,6 @@ export default function CopyableText({ text }: CopyableTextProps) {
       await navigator.clipboard.writeText(text);
       setCopied(true);
 
-      // Automatically close the snackbar after 2 seconds
       setTimeout(() => setCopied(false), 2000);
     } catch (error) {
       console.error("Failed to copy text:", error);
@@ -67,7 +66,7 @@ export default function CopyableText({ text }: CopyableTextProps) {
         <SnackbarContent
           message="Copied!"
           sx={{
-            backgroundColor: "secondary.main", // example: success color from theme
+            backgroundColor: "secondary.main",
             color: "#fff",
             fontSize: 16,
           }}

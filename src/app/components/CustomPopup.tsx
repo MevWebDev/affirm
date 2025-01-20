@@ -1,4 +1,3 @@
-// Popup.tsx
 import React from "react";
 import {
   Dialog,
